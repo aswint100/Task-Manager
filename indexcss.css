@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+main{
+  
+   background-size: contain;
+   height: 100%;
+   font-family: "Courgette", cursive;
+}
+/*! Nav bar Starts */
+nav{
+    height:60px ;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 56, 99);
+    border-bottom:1.3px solid white;
+    font-family: "Madimi One", sans-serif !important;
+    background-image: url(./img/wallpaperflare.com_wallpaper\ \(1\).jpg);
+}
+nav article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/* ! logo starts */
+#logo{
+flex-basis: 15%;
+}
+#logo img{
+    height: 53px;
+}
+/* ! logo ends */
+/* !navigation starts */
+#navigation{
+    flex-basis: 65%;
+}
+#navigation ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navigation ul li {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+#navigation ul li a{
+    text-decoration: none;
+    color: rgba(0, 18, 28, 0.648);
+}
+#navigation ul li:hover {
+    a{color: rgb(0, 18, 28);}
+    border-bottom:3px solid white;
+    height: 50%;
+}
+/* !navigtaion ends */
+/* !Profile starts */
+#profile{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#profile aside:first-child{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid;
+    color: rgba(0, 18, 28, 0.648);
+}
+#profile aside button:last-child{
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Madimi One", sans-serif;
+    color: rgba(0, 18, 28, 0.648);
+}
+#profile aside:first-child:hover{
+    cursor: pointer;
+    border-width: 2px;
+    border-color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    color: rgb(0, 18, 28);
+}
+#profile aside button:last-child:hover{
+    background-color: transparent;
+    border-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 18, 28);
+}
+/* ! Profile ends */
+/*! Nav bar Ends*/
+/* !Container starts*/
+#container{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+/* !form container starts */
+.form_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_container form{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    row-gap: 15px;
+    background-color: #a2fff4;
+}
+.form_container form aside{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+/* !label */
+
+.form_container form aside label{
+    font-size: 24px;
+    color: #0d5c39;
+}
+/* ! input */
+.form_container form aside input{
+padding: 7px;
+width: 280px;
+border-radius: 21px;
+border:1.5px solid white;
+background-color: transparent;
+font-family: "Courgette", cursive;
+outline: none;
+}
+input::placeholder{
+    color: white;
+}
+input:hover::placeholder{
+    color: rgb(0, 18, 28);
+}
+
+/* !select */
+.form_container form aside select{
+padding: 7px;
+width: 280px;
+border-radius: 21px;
+border:1.5px solid white;
+background-color: transparent;
+color: white;
+font-family: "Courgette", cursive;
+outline: none;
+option{
+    background-color:#003863;
+    font-family: "Courgette", cursive;
+}
+}
+/* !button */
+
+.form_container form button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 21px;
+    background-color: rgb(255, 255, 255); 
+    border: none; 
+    font-family: "Courgette", cursive;
+    
+}
+/* ! hover */
+.form_container form button:hover{
+    background-color: #00a9ec;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 10px  rgb(0, 0, 0);
+}
+.form_container form aside select:hover{
+    background-color: whitesmoke;
+    color: rgb(0, 18, 28);
+}
+.form_container form aside input:hover{
+    background-color: whitesmoke;
+    color: rgb(0, 18, 28);
+}
+/* !form container ends */
+.data_container{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,230px);
+    grid-auto-rows: 230px;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.data_container aside{
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.543);
+    color: #0d5c39;
+    background-color:rgb(163, 255, 244);
+}
+.data_container aside div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 90%;
+    button{
+        padding: 7px;
+        width: 100px;
+        border-radius: 30px;
+        border: none;
+        font-family: "Courgette", cursive;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 19px 0px  rgba(37, 134, 139, 0.267);
+    }
+}
+.data_container aside p{
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    height: 100%;
+    width: 100%;
+
+}
+.data_container aside div button:first-child:hover{
+    background-color: rgb(40, 166, 69);
+    color: white;
+}
+.data_container aside div button:last-child:hover{
+    background-color: rgb(219, 53, 69);
+    color: white;
+}

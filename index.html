@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Madimi+One&family=Noto+Sans+Cuneiform&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Task Manager</title>
+    <link rel="icon" type="image/png" href="../img/task manager.png">
+    <link rel="stylesheet" href="./indexcss.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <article id="logo"><img src="https://files.softicons.com/download/application-icons/degree-icon-pack-by-prakhar-mishra/png/512x512/task%20manager.png" alt=""></article>
+            <article id="navigation">
+                <ul>
+                    <li><a href="./dailytask/index.html">Daily Task</a></li>
+                    <li><a href="./weeklyTask/index.html">Weekly Task</a></li>
+                    <li><a href="./monthlyTask/index.html">Monthly Task</a></li>
+                </ul></article>
+            <article id="profile">
+                <aside>A</aside>
+                <aside>
+                <button>Logout</button>
+                </aside>
+            </article>
+        </nav>
+        <section id="container">
+            <article class="form_container">
+                <form action="">
+                    <aside>
+                    <label for="name">Task Name</label>
+                    <input type="text" placeholder="Enter The Task Name" id="taskname" required>
+                    </aside>
+                    <aside>
+                    <label for="">Description</label>
+                    <input type="text" placeholder="Enter The Task Description" id="description" required>
+                    </aside>
+                    <aside>
+                    <label for="" >Time</label>
+                    <select name="" id="time" required>
+                        <option value="" hidden> Select The Time Frame</option>
+                        <option value="eod">EOD</option>
+                        <option value="weekly">WEEK</option>
+                        <option value="monthly">MONTHLY</option>
+                    </select>
+                    </aside>
+                    <button type="submit" id="addtask">Add Task</button>
+                </form>
+            </article>
+            <article class="data_container" style="overflow: scroll;"></article>
+        </section>
+    </main>
+ <script src="./indexjs.js"></script>   
+</body>
+</html>
